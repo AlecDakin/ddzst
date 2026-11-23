@@ -1,0 +1,2 @@
+#!/bin/bash
+dd bs=1M iflag=fullblock if="/dev/$1" status=progress | zstd -16v > "$2"
